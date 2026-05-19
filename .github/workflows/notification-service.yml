@@ -1,8 +1,10 @@
 name: Notification Service
 
 on:
+  workflow_dispatch:
   push:
     paths:
+      - .github/workflows/notification-service.yml
       - notification-service/**
     branches:
       - 'main'

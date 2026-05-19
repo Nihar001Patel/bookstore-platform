@@ -1,8 +1,10 @@
 name: BookStore Webapp
 
 on:
+  workflow_dispatch:
   push:
     paths:
+      - .github/workflows/bookstore-webapp.yml
       - bookstore-webapp/**
     branches:
       - 'main'

@@ -1,8 +1,10 @@
 name: API Gateway
 
 on:
+  workflow_dispatch:
   push:
     paths:
+      - .github/workflows/api-gateway.yml
       - api-gateway/**
     branches:
       - 'main'
